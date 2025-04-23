@@ -1,0 +1,17 @@
+.education-section {
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  
+  .education-card {
+    background-color: #d90429;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,102 @@
+.game {
+  position: relative;
+  width: 90%;
+  height: 50vh;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #1c1c1c, #2a2a2a);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  color: white;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/20bab169cb54f5d0cc6e664801cb63c0.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: float 3s linear forwards;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.bubble.blast {
+  animation: none;
+  transform: scale(1.8);
+  opacity: 0;
+}
+
+
+@keyframes float {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.2);
+    opacity: 0;
+    top: 100%;
+  }
+}
+
+.glitter {
+  position: absolute;
+  pointer-events: none;
+  animation: fadeOut 0.7s forwards;
+}
+
+.glitter span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: sparkle 0.7s ease-out forwards;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+.score {
+  color: white;
+}
+.betterluck{
+  color: red;
+}
+.AboutBubbles{
+  color: red;
+  font-size: 20px;
+
+}

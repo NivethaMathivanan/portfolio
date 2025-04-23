@@ -1,0 +1,22 @@
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: rgb(236, 227, 227);
+  margin: 0 15px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff4c4c;
+}
+.footer{
+background-color: #201e1e;
+padding: 15px;
+}
+.risedletter{
+  color: white;
+  font-size: 13px;
+}
